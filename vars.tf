@@ -1,14 +1,14 @@
 
 
-variable "PulicKey"{
+variable "PulicKey" {
   default = "vprofileKey-pub"
 }
 
 variable "PrivateKey" {
   default = "vprofileKey"
-  
+
 }
-variable "AWS_REGION"{
+variable "AWS_REGION" {
   default = "aws-east-1"
 
 }
@@ -24,7 +24,7 @@ variable "AMIS" {
 }
 
 variable "VPC_NAME" {
-  default = "vprofile-VPC "
+  default = "sprofile-VPC "
 
 }
 variable "VpcCIDR" {
@@ -32,7 +32,7 @@ variable "VpcCIDR" {
 
 }
 ############################publicsubnet
-variable "PrivSub1CIDR" {
+variable "PubSub1CIDR" {
   default = "172.31.1.0/24"
 
 }
@@ -64,21 +64,21 @@ variable "PrivSub3CIDR" {
 }
 
 ############################################################## AZones1,2,3
-variable "avzone1" {
+variable "zone1" {
   default = "us-east-1a"
 
 }
 
-variable "avzone2" {
+variable "zone2" {
   default = "us-east-1b"
 
 }
 
-variable "avzone3" {
+variable "zone3" {
   default = "us-east-1c"
 
 }
 output "kk" {
   value = var.PrivateKey
-  
+
 }
